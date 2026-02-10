@@ -1,0 +1,109 @@
+
+/* Contact page */
+*{
+  margin:0%;
+  padding:0%;
+}
+#contactpage{
+    background-image:url("https://t4.ftcdn.net/jpg/13/92/38/71/360_F_1392387136_IZvUvqSXscu0yrQyvzJxrwzLcooWubpe.jpg");
+    min-height:90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:60px;
+}
+.formSection span{
+    color:#F16D34;
+    font-size:17px;
+}
+#mainContainer{
+  display:flex;
+  background-color:rgb(220, 247, 244);
+  width:90%;
+  height:500px;
+  border-radius:15px;
+  margin:0% 5% 0px 5%;
+}
+
+.imgSetion{
+    flex:50%;
+}
+.imgSection img{
+    width:400px; 
+   margin-left:20%;
+}
+/* Form Setion */
+.formSection{
+    flex:50%;
+     margin-left:20%;
+}
+.formSection h1{
+    color:teal;
+    font-size:38px;
+    text-align:left;
+    margin-top:2%;
+}
+form input{
+    margin-top:6%;
+    border:none;
+    outline:none;
+    background:transparent;
+    border-bottom:2px solid rgb(126, 108, 108);
+    font-size:17px;
+    color: White;
+    width:250px;
+}
+form ::placeholder{
+    color:black;
+}
+.formSection p{
+    margin-top:6%;
+}
+.formSection p a{
+    color:#F16D34;
+}
+textarea{
+  width:60%;
+  margin-top:6%;
+  height:65px;   /* ithu increase panninaa huge aagum */
+  padding:12px;
+  font-size:17px;
+  resize:none; 
+   /* user resize venam na */
+}
+textarea::placeholder {
+  color:black;
+}
+.formSection button{
+    margin-top:6%;
+    color:white;
+    background-color:teal;
+    border:2px solid teal;
+    padding:6px;
+    font-size:20px;
+    padding:4px;
+    width:100px;
+    border-radius:20px;
+    transition: all 0.7s ease-in-out;
+}
+.formSection button:hover{
+    box-shadow:0px 0px 5px 3px rgb(99, 180, 235);
+    transform: scale(1.03);
+}
+
+@media (max-width: 956px) {
+  #mainContainer{
+    flex-direction:column;
+    height:auto;
+  }
+
+  .imgSection img{
+    width:300px;
+    margin: 0 auto;
+    display:block;
+  }
+
+  .formSection{
+    margin-left:0;
+    padding:20px;
+  }
+}
